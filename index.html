@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sistema de solicitudes de mantenimiento automotriz de TeoAutomotriz.">
+  <title>TeoAutomotriz | Mantenimiento automotriz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio" data-screen-link="home">🔧 TeoAutomotriz</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio" data-screen-link="home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#nosotros" data-screen-link="home">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios" data-screen-link="home">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto" data-screen-link="home">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" id="loginNav" href="#acceso" data-screen-link="login">Iniciar sesión</a></li>
+          <li class="nav-item ms-lg-2"><button id="logoutBtn" class="btn btn-outline-light btn-sm d-none" type="button">Cerrar sesión</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section id="inicio" data-screen="home" class="hero text-white">
+    <div class="container py-5"><div class="row align-items-center min-vh-50"><div class="col-lg-8 py-5">
+      <p class="text-warning text-uppercase fw-bold">Taller · Diagnóstico · Confianza</p>
+      <h1 class="display-3 fw-bold">Tu próximo viaje empieza con un auto bien cuidado.</h1>
+      <p class="lead my-4">Agenda el mantenimiento de tu vehículo y sigue cada etapa desde tu espacio personal.</p>
+      <a id="heroCta" href="#acceso" data-screen-link="login" class="btn btn-warning btn-lg fw-bold">Iniciar sesión o crear cuenta</a>
+    </div></div></div>
+  </section>
+  <section id="nosotros" data-screen="home" class="py-5"><div class="container"><div class="row g-4 align-items-center"><div class="col-lg-7"><p class="eyebrow">Conócenos</p><h2 class="fw-bold">Cuidado automotriz con atención cercana</h2><p>Somos un taller comprometido con el mantenimiento preventivo y correctivo de vehículos. Te explicamos el servicio solicitado y te permitimos consultar su estado desde esta plataforma.</p></div><div class="col-lg-5"><div class="p-4 rounded-4 bg-light"><h3 class="h5 fw-bold">Nuestro compromiso</h3><ul class="mb-0"><li>Atención organizada y personalizada.</li><li>Seguimiento de cada solicitud.</li><li>Servicios orientados al cuidado del vehículo.</li></ul></div></div></div></div></section>
+  <section id="servicios" data-screen="home" class="py-5 bg-light"><div class="container"><div class="text-center mb-4"><p class="eyebrow">Lo que hacemos</p><h2 class="fw-bold">Nuestros servicios</h2><p>Elige el servicio que necesita tu vehículo.</p></div><div class="row g-4">
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://images.squarespace-cdn.com/content/v1/66cf56b09e9f0b067cd80a96/19802a7c-9c86-4372-ada0-7a989149ba55/Untitled-1%2Bcopy.jpg?format=1500w" data-fallback="images/aceite.svg" alt="Mecánico realizando cambio de aceite" loading="lazy"><h3 class="h5 fw-bold">Cambio de aceite</h3><p class="mb-0">Revisión y cambio de aceite y filtros según las necesidades del vehículo.</p></div></article></div>
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://static.wixstatic.com/media/11062b_57ba832f5a76408791eebce94221efbd~mv2.jpg/v1/fill/w_900%2Ch_600%2Cal_c%2Cq_85%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/11062b_57ba832f5a76408791eebce94221efbd~mv2.jpg" data-fallback="images/frenos.svg" alt="Mecánico inspeccionando el sistema de frenos" loading="lazy"><h3 class="h5 fw-bold">Revisión de frenos</h3><p class="mb-0">Inspección del sistema de frenos para revisar su estado y funcionamiento.</p></div></article></div>
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://static.wixstatic.com/media/11062b_a9c4f4f1e3c64af083c01811a62930e7~mv2.jpg/v1/fill/w_640%2Ch_462%2Cal_c%2Cq_80%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/11062b_a9c4f4f1e3c64af083c01811a62930e7~mv2.jpg" data-fallback="images/diagnostico.svg" alt="Mecánico conectando un computador para revisar el motor" loading="lazy"><h3 class="h5 fw-bold">Diagnóstico general</h3><p class="mb-0">Evaluación general para identificar necesidades de mantenimiento.</p></div></article></div>
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://static.wixstatic.com/media/c86304_08b82cbb1c344165b48b1f7dda77c9d1~mv2.jpg/v1/fill/w_1920%2Ch_1281%2Cal_c%2Cq_90%2Cusm_0.66_1.00_0.01%2Cenc_avif%2Cquality_auto/c86304_08b82cbb1c344165b48b1f7dda77c9d1~mv2.jpg" data-fallback="images/alineacion.svg" alt="Servicio de ruedas y frenos en taller automotriz" loading="lazy"><h3 class="h5 fw-bold">Alineación y balanceo</h3><p class="mb-0">Revisión de ruedas y dirección para una conducción más estable.</p></div></article></div>
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://lirp.cdn-website.com/4d7e77fb/dms3rep/multi/opt/auto%2Brepair%2Bmartinsville%2Bva-1920w.jpg" data-fallback="images/electrico.svg" alt="Técnico revisando el sistema eléctrico de un automóvil" loading="lazy"><h3 class="h5 fw-bold">Revisión eléctrica</h3><p class="mb-0">Comprobación de batería, luces y componentes eléctricos básicos.</p></div></article></div>
+    <div class="col-md-6 col-lg-4"><article class="card service-card h-100"><div class="card-body"><img class="service-photo" src="https://static.arabwheels.ae/2026/06/02141511/ChatGPTImageJun2202602_11_37P-2.jpeg" data-fallback="images/aire.svg" alt="Técnico comprobando el sistema de aire acondicionado del vehículo" loading="lazy"><h3 class="h5 fw-bold">Aire acondicionado</h3><p class="mb-0">Inspección y mantenimiento del sistema de climatización.</p></div></article></div>
+  </div></div></section>
+  <section id="solicitud" data-screen="request" class="py-5 d-none"><div class="container"><button class="btn btn-link px-0 mb-3" type="button" data-screen-link="dashboard">← Volver a mis mantenimientos</button><div class="section-heading"><p class="eyebrow">Agenda tu visita</p><h2 class="fw-bold">Solicitud de mantenimiento</h2><p>Completa los datos para registrar tu solicitud.</p></div>
+    <form id="requestForm" class="form-panel" novalidate>
+      <input type="hidden" id="editId">
+      <div class="form-section-title">Datos del cliente</div><div class="row g-3">
+        <div class="col-md-4"><label for="clientName" class="form-label">Nombre completo *</label><input id="clientName" class="form-control" required minlength="3" autocomplete="name"></div>
+        <div class="col-md-4"><label for="clientEmail" class="form-label">Correo electrónico *</label><input id="clientEmail" type="email" class="form-control" required autocomplete="email"></div>
+    <div class="col-md-4"><label for="clientPhone" class="form-label">Teléfono *</label><input id="clientPhone" type="tel" class="form-control" required inputmode="numeric" maxlength="10" minlength="10" pattern="[0-9]{10}" title="Ingresa exactamente 10 dígitos, sin espacios ni signos." autocomplete="tel" placeholder="3001234567"></div>
+      </div>
+      <div class="form-section-title mt-4">Datos del vehículo</div><div class="row g-3">
+        <div class="col-md-4"><label for="plate" class="form-label">Placa *</label><input id="plate" class="form-control text-uppercase" required pattern="[A-Z]{3}-[0-9]{4}" maxlength="8" title="Escribe 3 letras, un guion y 4 números."></div>
+        <div class="col-md-4"><label for="brand" class="form-label">Marca *</label><select id="brand" class="form-select" required><option value="">Selecciona una marca</option><option>Abarth</option><option>Acura</option><option>Alfa Romeo</option><option>Aston Martin</option><option>Audi</option><option>BAIC</option><option>Bentley</option><option>BMW</option><option>Buick</option><option>BYD</option><option>Cadillac</option><option>Changan</option><option>Chery</option><option>Chevrolet</option><option>Chrysler</option><option>Citroën</option><option>Cupra</option><option>Dodge</option><option>Dongfeng</option><option>DS</option><option>Ferrari</option><option>Fiat</option><option>Ford</option><option>Foton</option><option>GAC</option><option>Geely</option><option>GMC</option><option>Great Wall</option><option>Haval</option><option>Hino</option><option>Holden</option><option>Honda</option><option>Hyundai</option><option>Infiniti</option><option>Isuzu</option><option>JAC</option><option>Jaguar</option><option>Jeep</option><option>JMC</option><option>Kia</option><option>Lada</option><option>Lamborghini</option><option>Lancia</option><option>Land Rover</option><option>Lexus</option><option>Lincoln</option><option>Mahindra</option><option>Maserati</option><option>Mazda</option><option>McLaren</option><option>Mercedes-Benz</option><option>MG</option><option>Mini</option><option>Mitsubishi</option><option>Nissan</option><option>Opel</option><option>Peugeot</option><option>Pontiac</option><option>Porsche</option><option>RAM</option><option>Renault</option><option>Rolls-Royce</option><option>Saab</option><option>Scania</option><option>SEAT</option><option>Škoda</option><option>Subaru</option><option>Suzuki</option><option>Tata</option><option>Tesla</option><option>Toyota</option><option>Vauxhall</option><option>Volkswagen</option><option>Volvo</option><option>Yutong</option><option>Zotye</option><option value="Otra">Otra marca</option></select></div>
+        <div class="col-md-4"><label for="model" class="form-label">Modelo *</label><input id="model" class="form-control" list="modelOptions" required placeholder="Selecciona o escribe el modelo"><datalist id="modelOptions"></datalist></div>
+        <div class="col-md-6"><label for="year" class="form-label">Año *</label><input id="year" type="number" step="1" class="form-control" required min="1950" max="2027" placeholder="Ej. 2020"></div>
+        <div class="col-md-6"><label for="mileage" class="form-label">Kilometraje (km) *</label><input id="mileage" type="number" step="1" class="form-control" required min="0" max="999999" placeholder="Máximo 999.999 km"></div>
+      </div>
+      <div class="form-section-title mt-4">Datos del mantenimiento</div><div class="row g-3">
+        <div class="col-md-6"><label for="service" class="form-label">Tipo de servicio *</label><select id="service" class="form-select" required><option value="">Selecciona un servicio</option><option>Cambio de aceite</option><option>Revisión de frenos</option><option>Diagnóstico general</option><option>Alineación y balanceo</option><option>Revisión eléctrica</option><option>Aire acondicionado</option><option>Otro</option></select></div>
+        <div class="col-md-3"><label for="requestedDate" class="form-label">Fecha solicitada *</label><input id="requestedDate" type="date" class="form-control" required></div>
+        <div class="col-md-3"><label for="requestedTime" class="form-label">Hora solicitada *</label><input id="requestedTime" type="time" class="form-control" required></div>
+        <fieldset class="col-md-6"><legend class="form-label fs-6">Género (opcional)</legend><div class="d-flex gap-3 flex-wrap"><label><input type="radio" name="gender" value="Femenino"> Femenino</label><label><input type="radio" name="gender" value="Masculino"> Masculino</label><label><input type="radio" name="gender" value="Prefiero no decirlo" checked> Prefiero no decirlo</label></div></fieldset>
+        <fieldset class="col-md-6"><legend class="form-label fs-6">Modalidad *</legend><div class="d-flex gap-3 flex-wrap"><label><input type="radio" name="modality" value="En taller" required checked> En taller</label><label><input type="radio" name="modality" value="A domicilio" required> A domicilio</label></div></fieldset>
+        <div class="col-12"><div class="form-check"><input id="diagnosticConsent" type="checkbox" class="form-check-input"><label for="diagnosticConsent" class="form-check-label">Solicito que realicen un diagnóstico general adicional.</label></div><div class="form-check"><input id="contactConsent" type="checkbox" class="form-check-input" required><label for="contactConsent" class="form-check-label">Acepto que el taller me contacte sobre esta solicitud. *</label></div></div>
+        <div class="col-12"><label for="notes" class="form-label">Observaciones</label><textarea id="notes" class="form-control" rows="3" maxlength="500" placeholder="Describe brevemente lo que necesita tu vehículo"></textarea></div>
+      </div>
+      <div class="mt-4 d-flex gap-2"><button id="submitRequest" class="btn btn-danger" type="submit">Registrar solicitud</button><button id="cancelEdit" class="btn btn-outline-secondary d-none" type="button">Cancelar edición</button></div>
+      <p class="small text-secondary mt-3 mb-0">* Campos obligatorios. La fecha solicitada no puede ser anterior a hoy.</p>
+    </form>
+  </div></section>
+  <section id="acceso" data-screen="login" class="py-5 bg-light d-none"><div class="container"><div class="row justify-content-center"><div class="col-lg-6"><div class="form-panel"><div class="section-heading"><p class="eyebrow">Tu espacio Teo</p><h2 id="authTitle" class="h3 fw-bold">Iniciar sesión</h2><p id="authDescription">Entra para consultar y organizar los mantenimientos de tu vehículo.</p></div>
+    <form id="loginForm"><div class="mb-3 d-none" id="registerNameGroup"><label for="registerName" class="form-label">Nombre completo</label><input id="registerName" type="text" class="form-control" minlength="3" autocomplete="name"></div><div class="mb-3"><label for="loginEmail" class="form-label">Correo</label><input id="loginEmail" type="email" class="form-control" autocomplete="email" required></div><div class="mb-3"><label for="loginPassword" class="form-label">Contraseña</label><input id="loginPassword" type="password" class="form-control" minlength="6" autocomplete="current-password" required></div><button id="authSubmit" class="btn btn-dark w-100" type="submit">Entrar</button></form>
+    <p class="text-center mt-3 mb-0"><span id="authSwitchText">¿Primera vez aquí?</span> <button id="authSwitch" class="btn btn-link p-0 align-baseline" type="button">Crear cuenta</button></p>
+    <div class="role-help mt-4"><div><span class="role-label">CLIENTE</span><p class="mb-2">Puedes crear una cuenta propia o probar con una cuenta:</p><p class="mb-0"><strong>cliente@teoautomotriz.com</strong> / cliente123<br><strong>ana@teoautomotriz.com</strong> / ana123</p></div><div><span class="role-label">ADMINISTRADOR</span><p class="mb-0">Acceso de demostración:<br><strong>admin@teoautomotriz.com</strong><br>Contraseña: <strong>admin123</strong></p></div></div>
+  </div></div></div></div></section>
+  <section id="panel" data-screen="dashboard" class="py-5 d-none"><div class="container"><div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4"><div><p class="eyebrow">Área personal</p><h2 id="panelTitle" class="fw-bold mb-1">Mis mantenimientos</h2><p id="welcomeText" class="mb-0 text-secondary"></p></div><span id="roleBadge" class="badge text-bg-dark fs-6"></span></div><article class="profile-card mb-4" aria-label="Perfil del usuario"><div><span class="profile-label">Nombre</span><strong id="profileName"></strong></div><div><span class="profile-label">Correo</span><strong id="profileEmail"></strong></div><div><span class="profile-label">Rol</span><strong id="profileRole"></strong></div></article><button id="newRequestBtn" class="btn btn-danger mb-4" type="button">Nueva solicitud de mantenimiento</button><div class="table-responsive"><table class="table table-hover align-middle bg-white"><thead class="table-dark"><tr><th>Cliente</th><th>Vehículo</th><th>Servicio</th><th>Fecha solicitada</th><th>Entrega del vehículo</th><th id="actionsHeading">Estado</th></tr></thead><tbody id="requestRows"></tbody></table></div><p id="emptyMessage" class="text-secondary text-center d-none py-4">Aún no hay solicitudes para mostrar.</p></div></section>
+  <section id="contacto" data-screen="home" class="py-5 bg-dark text-white"><div class="container"><div class="row g-4"><div class="col-md-6"><h2 class="h4 fw-bold">TeoAutomotriz</h2><p class="mb-0">Kilómetro a kilómetro, te acompañamos.</p></div><div class="col-md-6"><h3 class="h5">Contacto</h3><p class="mb-1">Correo: contacto@teoautomotriz.com</p><p class="mb-1">Teléfono: +57 300 555 0148</p><p class="mb-0">Bogotá, Colombia</p></div></div></div></section>
+</main>
+<footer data-screen="home" class="py-3 bg-black text-white-50 text-center"><small>© 2026 TeoAutomotriz · Proyecto académico de Programación Web 1</small></footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
